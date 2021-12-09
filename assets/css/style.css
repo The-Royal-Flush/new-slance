@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat';
+}
+body {
+  background-color: #ecebeb;
+}
+
+.r {
+  transform: rotate(-60deg);
+  height: 4rem;
+  width: 2rem;
+}
+.triangle {
+  position: relative;
+  background-color: rgba(0, 0, 238);
+  text-align: left;
+}
+.triangle:before,
+.triangle:after {
+  content: "";
+  position: absolute;
+  background-color: inherit;
+}
+.triangle,
+.triangle:before,
+.triangle:after {
+  width: 2rem;
+  height: 2rem;
+  border-top-right-radius: 50%;
+}
+.triangle {
+  transform: rotate(-60deg) skewX(-30deg) scale(1, 0.866);
+}
+.triangle:before {
+  transform: rotate(-135deg) skewX(-45deg) scale(1.414, 0.707)
+    translate(0, -50%);
+}
+.triangle:after {
+  transform: rotate(135deg) skewY(-45deg) scale(0.707, 1.414) translate(50%);
+}
+.h__pack{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 70%;
+}
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 5rem;
+  margin: 2rem;
+}
+.h__block {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
+  width: 60px;
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.h__icons {
+  font-size: 24px;
+  color: grey;
+}
+.header__input {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  width: fit-content;
+  background-color: #fff;
+  /* border: 1px solid rgb(143, 143, 143); */
+  height: 60px;
+  padding: 0.5rem 1.5rem;
+  border-radius: 4px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  color: grey;
+}
+.header__input input {
+  border: none;
+  outline: none;
+  width: 40vw;
+  font-size: 16px;
+  color: rgb(0, 0, 0);
+}
+.h__button {
+  width: 173px;
+  height: 60px;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  background-color: rgba(0, 0, 238, 0.8);
+  color: #fff;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
